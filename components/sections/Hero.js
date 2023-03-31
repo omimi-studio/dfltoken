@@ -1,10 +1,10 @@
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
-import herobanner from "../../assets/img/herobanner.jpg";
+
+import herobanner from "../../assets/img/block.gif";
 import Image from "next/image";
 import LogoCloud from "./logoCloud";
 export default function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#000719]">
+    <section className="relative isolate overflow-hidden bg-[#172554]">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -58,9 +58,9 @@ export default function Hero() {
           </linearGradient>
         </defs>
       </svg>
-      <div className="mx-auto max-w-7xl px-6 pt-10 lg:flex lg:px-8">
-        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl pt-16 lg:pt-24">
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl ">
+      <div className="mx-auto max-w-7xl px-6 pt-24 sm:pt-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto text-center lg:text-left">
+          <h1 className="mt-10 text-5xl font-bold tracking-tight text-white sm:text-7xl ">
             Secure{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-violet-500 to-purple-500">
               Passive Income
@@ -73,25 +73,62 @@ export default function Hero() {
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Revolutionizing DeFi Staking and Earning Potential
           </p>
-          <div className="mt-10 flex items-center gap-x-6">
+          <div className="mt-10 flex flex-col lg:flex-row items-start justify-start  lg:items-center gap-6">
             <a
-              href="/app"
-              className="px-8 py-3 text-sm rounded-full ring-1 ring-white hover:bg-black font-semibold leading-6 text-white"
+              href="/stake"
+              className="px-8 py-3 w-full lg:w-40 text-center  text-sm rounded-full ring-1 ring-white hover:bg-black font-semibold leading-6 text-white"
             >
               DFL Token
             </a>
+            <a
+              href="#"
+              className="rounded-full  px-8 py-3 w-full lg:w-40 text-center leading-6 text-sm font-semibold text-white shadow-sm bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Dextools
+            </a>
+            <a
+              href="#"
+              className="px-8 py-3 w-full lg:w-40 text-center text-sm rounded-full font-semibold leading-6 text-white"
+            >
+              Pinksale <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
-        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-          <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <Image
-              src={herobanner}
-              alt="App screenshot"
-              width={2432}
-              height={700}
-              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
+        <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+          <svg
+            viewBox="0 0 366 729"
+            role="img"
+            className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
+          >
+            <title>App screenshot</title>
+            <defs>
+              <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
+                <rect width={316} height={684} rx={36} />
+              </clipPath>
+            </defs>
+            <path
+              fill="#4B5563"
+              d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z"
             />
-          </div>
+            <path
+              fill="#343E4E"
+              d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z"
+            />
+            <foreignObject
+              width={316}
+              height={684}
+              transform="translate(24 24)"
+              clipPath="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)"
+            >
+              <Image
+                src={herobanner}
+                alt="App screenshot"
+                width={316}
+                height={1000}
+                className="w-full h-full "
+              />
+            </foreignObject>
+          </svg>
         </div>
       </div>
 

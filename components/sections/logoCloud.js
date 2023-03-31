@@ -14,13 +14,13 @@ export default function LogoCloud() {
           <h3 className="text-xl font-medium text-[#f7f7f7]">
             Deployed Multi-chain:
           </h3>
-          <span className="col-span-2 max-h-12 w-full  lg:col-span-1 items-center inline-flex">
+          <span className="col-span-2 max-h-12 lg:col-span-1 items-center flex space-x-0">
             <Image
               className="object-contain h-full"
               src={arbitrum}
               alt="logo"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
             />
             <p className="text-2xl font-medium text-[#f7f7f7]">Arbitrum</p>
           </span>

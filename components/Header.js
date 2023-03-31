@@ -15,11 +15,7 @@ export default function Example() {
   const path = usePathname();
 
   return (
-    <header
-      className={`bg-[#010A1F] fixed inset-x-0 top-0 isolate  z-20 w-screen  ${
-        path === "/app" && "hidden"
-      }`}
-    >
+    <header className="bg-[#010A1F] fixed inset-x-0 top-0 isolate  z-20 w-screen">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -55,7 +51,7 @@ export default function Example() {
             </a>
           ))}
           <a
-            href="/app"
+            href="/stake"
             className="px-4 py-2 text-sm rounded-full ring-1 ring-white hover:bg-black font-semibold leading-6 text-white"
           >
             Launch Dapp
@@ -105,7 +101,7 @@ export default function Example() {
               </div>
               <div className="py-6">
                 <a
-                  href="/app"
+                  href="/stake"
                   className="px-4 py-2 text-sm rounded-full ring-1 ring-white hover:bg-black font-semibold leading-6 text-white"
                 >
                   Launch Dapp
