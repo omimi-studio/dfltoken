@@ -13,6 +13,7 @@
   ```
 */
 import Image from "next/image";
+import Link from "next/link";
 import dfllogo from "../assets/logo/dfllogo.png";
 import pancakeswap from "../assets/logo/pancakeswap.svg";
 import { usePathname } from "next/navigation";
@@ -195,25 +196,28 @@ export default function Footer() {
                 width={50}
                 height={50}
               />
-              <p className="text-2xl font-medium text-[#f7f7f7] pl-3">PankakeSwap</p>
+              <p className="text-2xl font-medium text-[#f7f7f7] pl-3">
+                PankakeSwap
+              </p>
             </span>
           </div>
         </div>
         <div className="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="text-gray-500 hover:text-gray-400"
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
+              </Link>
             ))}
           </div>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-            &copy; {new Date().getFullYear()} DFL TOKEN, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} DFL TOKEN, Inc. All rights
+            reserved.
           </p>
         </div>
       </div>

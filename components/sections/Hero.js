@@ -1,6 +1,6 @@
-
 import herobanner from "../../assets/img/block.gif";
 import Image from "next/image";
+import Link from "next/link";
 import LogoCloud from "./logoCloud";
 export default function Hero() {
   return (
@@ -74,24 +74,24 @@ export default function Hero() {
             Revolutionizing DeFi Staking and Earning Potential
           </p>
           <div className="mt-10 flex flex-col lg:flex-row items-start justify-start  lg:items-center gap-6">
-            <a
+            <Link
               href="/stake"
               className="px-8 py-3 w-full lg:w-40 text-center  text-sm rounded-full ring-1 ring-white hover:bg-black font-semibold leading-6 text-white"
             >
               DFL Token
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="rounded-full  px-8 py-3 w-full lg:w-40 text-center leading-6 text-sm font-semibold text-white shadow-sm bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Dextools
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="px-8 py-3 w-full lg:w-40 text-center text-sm rounded-full font-semibold leading-6 text-white"
             >
               Pinksale <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
