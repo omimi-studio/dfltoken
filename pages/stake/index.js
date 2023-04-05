@@ -5,7 +5,7 @@ export default function app() {
         <div className="px-4 pt-10 md:pt-24 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
           <div>
             <h1 className="mt-4 text-5xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-              1000 Forge
+              1000 DFL
             </h1>
             <p className="mt-3 text-5xl text-gray-300 sm:mt-5  lg:text-4xl xl:text-4xl">
               Total Staked
@@ -74,7 +74,6 @@ export default function app() {
                 max="100"
                 required
                 className="range-slider block w-full bg-transparent rounded-lg cursor-pointer h-2 shadow-sm sm:text-xl"
-                value={10}
               />
               <span className="flex mt-4 justify-between text-white">
                 <h4>0%</h4>
